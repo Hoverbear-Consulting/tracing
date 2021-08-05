@@ -115,6 +115,7 @@ where
 
         if self.display_level {
             self.format_level(*meta.level(), writer)?;
+            writer.write_char(' ')?;
         }
 
         if self.display_target {
